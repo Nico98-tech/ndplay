@@ -1,0 +1,36 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    color: #df611b;
+    transition: all 0.5s ease-in-out;
+}
+
+
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin desktop-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
